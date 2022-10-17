@@ -1,0 +1,263 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lighten($color: aquamarine, $amount: 20);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darken($color: aquamarine, $amount: 20);
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url("bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        header {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .pertama,
+            .kedua {
+
+                h1 {
+                    color: darken($color: aquamarine, $amount: 40);
+                    font-size: 4em;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 1.5em;
+                    color: aquamarine;
+                }
+
+                h2 {
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    color: darken($color: aquamarine, $amount: 40);
+                }
+            }
+        }
+
+        article {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 95%;
+            margin: auto;
+
+            .kotak {
+                width: 28%;
+                padding: 1em;
+                background-color: darken($color: aquamarine, $amount: 30);
+                border-radius: 10px;
+                color: lighten($color: lightblue, $amount: 20);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font-size: 2em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                }
+            }
+
+            .kotak:nth-child(2) {
+                margin-top: 3em;
+            }
+
+            .kotak:nth-child(3) {
+                margin-top: 6em;
+            }
+        }
+
+        section {
+            width: 90%;
+            margin-block: 5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                font-size: 3em;
+                color: darken($color: aquamarine, $amount: 40);
+                font-weight: bold;
+            }
+
+            .ip {
+                width: 70%;
+                padding: 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                input {
+                    width: 50%;
+                    padding: 1em;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border: 2px solid darken($color: aquamarine, $amount: 40);
+                    border-right: transparent;
+                    outline: none;
+                }
+
+                button {
+                    padding: 1em 2em;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    background-color: transparent;
+                    border: 2px solid darken($color: aquamarine, $amount: 50);
+                    color: darken($color: aquamarine, $amount: 40);
+                    transition: 500ms;
+                    outline: none;
+
+                    &:hover {
+                        background-color: darken($color: aquamarine, $amount: 40);
+                        color: lighten($color: aquamarine, $amount: 30);
+                        border: 2px solid transparent;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .isi {
+                width: 80%;
+                margin-top: 1em;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                align-items: center;
+
+                .kotak {
+                    width: 53%;
+                    background-color: darken($color: aquamarine, $amount: 40);
+                    color: lighten($color: aquamarine, $amount: 40);
+                    padding: .5em 1em;
+                    border-radius: 10px;
+                    font-size: 1.1em;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    button {
+                        background-color: lighten($color: aquamarine, $amount: 30);
+                        border: none;
+                        padding: .5em 2em;
+                        border-radius: 5px;
+                        color: darken($color: aquamarine, $amount: 50);
+                        transition: 500ms;
+                        border: 2px solid transparent;
+
+                        &:hover {
+                            background-color: darken($color: aquamarine, $amount: 40);
+                            color: lighten($color: aquamarine, $amount: 30);
+                            cursor: pointer;
+                            border: 2px solid lighten($color: aquamarine, $amount: 30);
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            position: relative;
+            padding-block: 1em;
+            text-align: center;
+            font-size: 1.1em;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        background-image: url("bg-pattern-top-mobile.svg");
+
+        main {
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            header {
+                grid-template-columns: 1fr;
+                grid-template-columns: 1fr;
+
+                .pertama,
+                .kedua {
+                    h1 {
+                        font-size: 2.5em;
+                    }
+
+                    h2 {
+                        font-size: 1.5em;
+                    }
+
+                    p {
+                        font-size: 1.1em;
+                    }
+                }
+            }
+
+            article {
+                margin-top: 1em;
+                flex-direction: column;
+
+                .kotak {
+                    width: 80%;
+                }
+
+                .kotak:nth-child(2),
+                .kotak:nth-child(3) {
+                    margin-top: 2em;
+                }
+            }
+
+            section {
+                width: 100%;
+
+                h1 {
+                    font-size: 2em;
+                    text-align: center;
+                }
+
+                .ip {
+                    width: 100%;
+                }
+
+                .isi {
+                    width: 100%;
+
+                    .kotak {
+                        width: 80%;
+                    }
+                }
+            }
+
+            footer {
+                display: block;
+                text-align: center;
+                width: 100%;
+                padding-block: 2em;
+            }
+        }
+    }
+}

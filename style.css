@@ -1,0 +1,308 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e5fff6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #19ffb2;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url("bg-pattern-top-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+body main {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main header {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body main header .pertama h1,
+body main header .kedua h1 {
+  color: #00b276;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+body main header .pertama p,
+body main header .kedua p {
+  font-size: 1.5em;
+  color: aquamarine;
+}
+
+body main header .pertama h2,
+body main header .kedua h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #00b276;
+}
+
+body main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  margin: auto;
+}
+
+body main article .kotak {
+  width: 28%;
+  padding: 1em;
+  background-color: #00e598;
+  border-radius: 10px;
+  color: #fbfdfe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main article .kotak h1 {
+  font-size: 2em;
+}
+
+body main article .kotak p {
+  font-size: 1.2em;
+}
+
+body main article .kotak:nth-child(2) {
+  margin-top: 3em;
+}
+
+body main article .kotak:nth-child(3) {
+  margin-top: 6em;
+}
+
+body main section {
+  width: 90%;
+  margin-block: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section h1 {
+  font-size: 3em;
+  color: #00b276;
+  font-weight: bold;
+}
+
+body main section .ip {
+  width: 70%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section .ip input {
+  width: 50%;
+  padding: 1em;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #00b276;
+  border-right: transparent;
+  outline: none;
+}
+
+body main section .ip button {
+  padding: 1em 2em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #007f54;
+  color: #00b276;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  outline: none;
+}
+
+body main section .ip button:hover {
+  background-color: #00b276;
+  color: white;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+body main section .isi {
+  width: 80%;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section .isi .kotak {
+  width: 53%;
+  background-color: #00b276;
+  color: white;
+  padding: .5em 1em;
+  border-radius: 10px;
+  font-size: 1.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section .isi .kotak button {
+  background-color: white;
+  border: none;
+  padding: .5em 2em;
+  border-radius: 5px;
+  color: #007f54;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border: 2px solid transparent;
+}
+
+body main section .isi .kotak button:hover {
+  background-color: #00b276;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+body main footer {
+  width: 100%;
+  position: relative;
+  padding-block: 1em;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-image: url("bg-pattern-top-mobile.svg");
+  }
+  body main {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body main header {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  body main header .pertama h1,
+  body main header .kedua h1 {
+    font-size: 2.5em;
+  }
+  body main header .pertama h2,
+  body main header .kedua h2 {
+    font-size: 1.5em;
+  }
+  body main header .pertama p,
+  body main header .kedua p {
+    font-size: 1.1em;
+  }
+  body main article {
+    margin-top: 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main article .kotak {
+    width: 80%;
+  }
+  body main article .kotak:nth-child(2),
+  body main article .kotak:nth-child(3) {
+    margin-top: 2em;
+  }
+  body main section {
+    width: 100%;
+  }
+  body main section h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  body main section .ip {
+    width: 100%;
+  }
+  body main section .isi {
+    width: 100%;
+  }
+  body main section .isi .kotak {
+    width: 80%;
+  }
+  body main footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-block: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
